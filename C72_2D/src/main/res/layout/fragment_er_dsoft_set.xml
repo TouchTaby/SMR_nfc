@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/er_dsoft_get_ParamNum" />
+
+            <EditText
+                android:id="@+id/etParamNum"
+                android:layout_width="80dip"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:singleLine="true"
+                android:text="" >
+            </EditText>
+            TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ms" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/er_dsoft_get_ParamVal" />
+
+            <EditText
+                android:id="@+id/etParamVal"
+                android:layout_width="80dip"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:singleLine="true"
+                android:text="" >
+            </EditText>
+
+            TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ms" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+            <Button
+                android:id="@+id/btnGet"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/er_dsoft_get_Get" />
+            <Button
+                android:id="@+id/btnSet"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/er_dsoft_get_Set" />
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>

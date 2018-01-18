@@ -1,0 +1,266 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hcpda.smr.activity.BindQueryActivity">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+     <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="3dp">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:background="#666665"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+         <TextView
+             android:id="@+id/tile_info"
+             android:layout_width="0dp"
+             android:layout_weight="1"
+             android:layout_height="wrap_content"
+             android:background="#666665"
+             android:padding="5dip"
+             android:text="查询、绑定资产信息"
+             android:textColor="#FFFFFF"/>
+         <TextView
+             android:id="@+id/tvMsg"
+             android:layout_width="185dp"
+             android:textColor="@color/colorAccent"
+             android:text="(脱机工作中)"
+             android:layout_height="wrap_content" />
+        </LinearLayout>
+         <LinearLayout
+                android:visibility="visible"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:visibility="visible"
+                    android:gravity="right"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="    一维条码:" />
+                    <EditText
+                        android:inputType="textNoSuggestions"
+                        android:visibility="visible"
+                        android:id="@+id/et1D"
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text=""
+                        android:textSize="16sp"
+                         />
+            </LinearLayout>
+
+            <LinearLayout
+                 android:orientation="horizontal"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content">
+                 <TextView
+                     android:gravity="right"
+                     android:layout_width="100dp"
+                     android:layout_height="wrap_content"
+                     android:textSize="16sp"
+                     android:text="资产SN号:" />
+                 <EditText
+                     android:inputType="textNoSuggestions"
+                     android:id="@+id/etSN"
+                     android:layout_height="wrap_content"
+                     android:layout_width="0dp"
+                     android:layout_weight="1"
+                     android:text=""
+                     android:textSize="16sp"
+                     />
+             </LinearLayout>
+             <LinearLayout
+                 android:orientation="horizontal"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content">
+                 <TextView
+                     android:gravity="right"
+                     android:layout_width="100dp"
+                     android:layout_height="wrap_content"
+                     android:textSize="16sp"
+                     android:text="设备型号:" />
+                 <EditText
+                     android:inputType="textNoSuggestions"
+                     android:id="@+id/etDeviceType"
+                     android:layout_height="wrap_content"
+                     android:layout_width="0dp"
+                     android:layout_weight="1"
+                     android:text=""
+                     android:textSize="16sp"
+                     />
+             </LinearLayout>
+
+             <LinearLayout
+                 android:orientation="horizontal"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content">
+                 <TextView
+                     android:gravity="right"
+                     android:layout_width="100dp"
+                     android:layout_height="wrap_content"
+                     android:textSize="16sp"
+                     android:text="占用U数:" />
+                 <EditText
+                     android:id="@+id/etUName"
+                     android:layout_height="wrap_content"
+                     android:layout_width="0dp"
+                     android:layout_weight="1"
+                     android:text=""
+                     android:textSize="16sp"
+                     android:inputType="number"
+                     style="@android:style/Widget.DeviceDefault.EditText" />
+
+             </LinearLayout>
+             <LinearLayout
+             android:orientation="horizontal"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+             <TextView
+                 android:gravity="right"
+                 android:layout_width="100dp"
+                 android:layout_height="wrap_content"
+                 android:textSize="16sp"
+                 android:text="UTag标签码:" />
+             <EditText
+                 android:inputType="textNoSuggestions"
+                 android:id="@+id/et2D"
+                 android:layout_height="wrap_content"
+                 android:layout_width="0dp"
+                 android:layout_weight="1"
+                 android:text=""
+                 android:textSize="16sp"
+                 />
+         </LinearLayout>
+           <LinearLayout
+             android:orientation="vertical"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+           <CheckBox
+               android:id="@+id/checkboxWriteRFid"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="手持机写标签"
+               android:checked="false" />
+         </LinearLayout>
+           <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+             android:layout_weight="1"
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:id="@+id/btConfirm2"
+             android:text="绑定"/>
+            <Button
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnQuery"
+                android:text="查询资产信息"/>
+        </LinearLayout>
+         <TextView
+             android:id="@+id/tvOpt"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:background="#666665"
+             android:padding="5dip"
+             android:text="读UTag标签"
+             android:textColor="#FFFFFF"/>
+         <!--查询-->
+         <LinearLayout
+             android:orientation="horizontal"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+             <TextView
+                 android:gravity="right"
+                 android:layout_width="80dp"
+                 android:layout_height="wrap_content"
+                 android:textSize="16sp"
+                 android:text="资产SN号:" />
+             <EditText
+                 android:id="@+id/etSN_query"
+                 android:layout_height="wrap_content"
+                 android:layout_width="0dp"
+                 android:layout_weight="1"
+                 android:text=""
+                 android:textSize="16sp"
+                 />
+         </LinearLayout>
+         <LinearLayout
+             android:orientation="horizontal"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+             <TextView
+                 android:gravity="right"
+                 android:layout_width="80dp"
+                 android:layout_height="wrap_content"
+                 android:textSize="16sp"
+                 android:text="设备型号:" />
+             <EditText
+                 android:id="@+id/etDeviceType_query"
+                 android:layout_height="wrap_content"
+                 android:layout_width="0dp"
+                 android:layout_weight="1"
+                 android:text=""
+                 android:textSize="16sp"
+                 />
+         </LinearLayout>
+         <LinearLayout
+             android:orientation="horizontal"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+             <TextView
+                 android:gravity="right"
+                 android:layout_width="80dp"
+                 android:layout_height="wrap_content"
+                 android:textSize="16sp"
+                 android:text="占用U数:" />
+             <EditText
+                 android:id="@+id/etUName_query"
+                 android:layout_height="wrap_content"
+                 android:layout_width="0dp"
+                 android:layout_weight="1"
+                 android:text=""
+                 android:textSize="16sp"
+                 android:inputType="number"
+                 style="@android:style/Widget.DeviceDefault.EditText" />
+
+         </LinearLayout>
+        <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+            <Button
+                android:text="读标签"
+                android:id="@+id/btn_query"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <Button
+                android:text="清除"
+                android:id="@+id/btn_clean"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+
+        </LinearLayout>
+
+</ScrollView>
+
+</FrameLayout>

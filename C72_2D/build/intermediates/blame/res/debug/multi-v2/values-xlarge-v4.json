@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "E:\\MyWorkerCode\\SMR_nfc\\C72_2D\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-xlarge-v4\\values-xlarge-v4.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-18.0.0.aar\\20a53fe41c75d4114315df588ed445fc\\res\\values-xlarge\\values.xml",
+                    "from": {
+                        "startLines": "4,6,7,8,9,10,11,12,13,15",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "175,372,434,502,571,636,702,764,824,889",
+                        "endColumns": "76,61,67,68,64,65,61,59,63,54",
+                        "endOffsets": "247,429,497,566,631,697,759,819,883,939"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,132,194,262,331,396,462,524,584,648",
+                        "endColumns": "76,61,67,68,64,65,61,59,63,54",
+                        "endOffsets": "127,189,257,326,391,457,519,579,643,698"
+                    }
+                }
+            ]
+        }
+    ]
+}

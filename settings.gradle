@@ -1,0 +1,1 @@
+include ':app', 'add_smr', ':barcode2ds', 'yuanma', 'C72_2D', 'c2d'

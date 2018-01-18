@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/C72_2D/C72_2D.iml" filepath="$PROJECT_DIR$/C72_2D/C72_2D.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SMR_nfc.iml" filepath="$PROJECT_DIR$/SMR_nfc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/add_smr/add_smr.iml" filepath="$PROJECT_DIR$/add_smr/add_smr.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/barcode2ds/barcode2ds.iml" filepath="$PROJECT_DIR$/barcode2ds/barcode2ds.iml" />
+      <module fileurl="file://$PROJECT_DIR$/c2d/c2d.iml" filepath="$PROJECT_DIR$/c2d/c2d.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yuanma/yuanma.iml" filepath="$PROJECT_DIR$/yuanma/yuanma.iml" />
+    </modules>
+  </component>
+</project>
